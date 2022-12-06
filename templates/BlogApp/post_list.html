@@ -44,7 +44,8 @@
                </ol>
            {% endif %}
         </a> </h2>
-            <a href="/delete1/{{ post.id }}">Delete-post</a>
+	    <a href="/update/ {{ post.id }}"><button id="btun">Update</button></a>
+            <a href="/delete1/{{ post.id }}"><button id="btun">Delete-post</button></a><br/><br/>
         <p>
             Tags:
             {% for tag in post.tags.all %}
